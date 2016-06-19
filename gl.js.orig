@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var gl ;
+=======
+var gl; // A global variable for the WebGL context
+>>>>>>> c59c8bf08ae2225a264406ef89925d6ca3799f42
 
 function start() {
   var canvas = document.getElementById("glcanvas");
@@ -7,6 +11,12 @@ function start() {
   gl = initWebGL(canvas);
   
   // Only continue if WebGL is available and working
+<<<<<<< HEAD
+  
+=======
+ 
+
+>>>>>>> c59c8bf08ae2225a264406ef89925d6ca3799f42
   if (gl) {
     // Set clear color to black, fully opaque
     gl.clearColor(0.0, 0.0, 0.0, 1.0);
@@ -16,9 +26,20 @@ function start() {
     gl.depthFunc(gl.LEQUAL);
     // Clear the color as well as the depth buffer.
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+<<<<<<< HEAD
   }
+
+=======
+
+	// Initialize the shaders
+
 	initShaders();
+
+	// Build objects to be drawn
+
 	initBuffers();
 
 	setInterval(drawScene, 15);
+  }
+>>>>>>> c59c8bf08ae2225a264406ef89925d6ca3799f42
 }
