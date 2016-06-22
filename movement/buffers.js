@@ -86,7 +86,7 @@ function drawScene() {
 
     // rotation
 	mvPushMatrix();
-	mat4.rotate(mvMatrix, degToRad(rSquare), [1, 1, 0]);
+	mat4.rotate(mvMatrix, degToRad(rSquare), [1, 1, 1]);
 	
 	mat4.translate(mvMatrix, [3.0, 0.0, 0.0]);
     gl.bindBuffer(gl.ARRAY_BUFFER, squareVertexPositionBuffer);
